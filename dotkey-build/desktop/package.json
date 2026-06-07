@@ -1,0 +1,24 @@
+{
+  "name": "dotkey-desktop",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "tauri": "tauri",
+    "tauri-dev": "tauri dev",
+    "tauri-build": "tauri build",
+    "tauri-build-mac": "tauri build --target aarch64-apple-darwin",
+    "tauri-build-mac-intel": "tauri build --target x86_64-apple-darwin",
+    "tauri-build-win": "tauri build --target x86_64-pc-windows-msvc"
+  },
+  "dependencies": {
+    "@dotkey/core": "file:../core"
+  },
+  "devDependencies": {
+    "vite": "^5.3.1",
+    "typescript": "^5.4.5",
+    "@tauri-apps/cli": "^1.5.14",
+    "@tauri-apps/api": "^1.5.3"
+  }
+}
