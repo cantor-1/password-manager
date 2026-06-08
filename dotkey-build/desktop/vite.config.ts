@@ -17,6 +17,9 @@ export default defineConfig({
     outDir: 'dist',
     commonjsOptions: {
       transformMixedEsModules: true
+    },
+    rollupOptions: {
+      external: ['libsodium-wrappers']
     }
   }
 })
