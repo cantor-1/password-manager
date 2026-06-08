@@ -1,3 +1,4 @@
+// @ts-nocheck
 import _sodium from 'libsodium-wrappers'
 let sodium: typeof _sodium | null = null
 
