@@ -24,6 +24,7 @@ jobs:
         working-directory: ./dotkey-build/core
         run: |
           npm install
+          npm i --save-dev @types/libsodium-wrappers || true
           npm run build
 
       - name: Build Android
@@ -61,6 +62,7 @@ jobs:
         shell: bash
         run: |
           npm install
+          npm i --save-dev @types/libsodium-wrappers || true
           npm run build
 
       - name: Build Windows
@@ -95,6 +97,7 @@ jobs:
         working-directory: ./dotkey-build/core
         run: |
           npm install
+          npm i --save-dev @types/libsodium-wrappers || true
           npm run build
 
       - name: Build macOS
